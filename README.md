@@ -4,7 +4,7 @@ a dance-to-divine text generator
 
 by Trisha Chhabra, August Luhrs, and Claire Yuan
 
-made for CIID's Machine Learning for Interaction Design Class, July 2017, taught by [Andreas Refsgaard](https://github.com/andreasref) and [Gene Kogan](https://github.com/genekogan)
+made for CIID's Machine Learning for Interaction Design class, July 2017, taught by [Andreas Refsgaard](https://github.com/andreasref) and [Gene Kogan](https://github.com/genekogan)
 
 
 # Overview
@@ -21,16 +21,44 @@ note: We had to get the duct-tape out when building this, since I (August) was r
 *it's a bit confusing keeping track of which tools need which O.S., so definitely make sure you can run all these
 
 Hardware:
+
 -- a Kinect (could be substituted with a webcam OSC app, check [ml4a](https://github.com/ml4a/ml4a-ofx))
 
 Software:
+
 -- [Torch.rnn](https://github.com/jcjohnson/torch-rnn)
+
 -- [Processing](https://processing.org/download/)
+
 -- [Wekinator](http://www.wekinator.org/downloads/)
+
 -- [Weki Input Helper](http://www.wekinator.org/input-helper/)
 
-# Installation
+
+# Installation and Operation
+
+Download all software mentioned above -- I won't be going into how to use each of them, so check the individual pages for info.
+
+The Order of Operation:
+
+A) Open Kinect Joints sketch, run it, and make sure kinect is tracking user's skeleton
+
+B) Open Weki Input Helper (firsttrain.inputproj) and make sure "Send and Monitor" tab is open, check to see if OSC is coming in from Kinect
+
+C) Open Wekinator (firsttrain.wekiproj) and make sure OSC is coming in from Input Helper. (Running this will be the last step)
+
+D) Open outputdancewords (sorry about the name...) and run it
+
+E) open terminal, navigate to torch-rnn (where you have hopefully copied the TorchText folder from this)
+
+so the final step is kinda wonky, but here's how we did it: 
+
+once evertything is in place, have the user dance for a few seconds, then quickly press run on wekinator and then click on the terminal. almost immediately you should see the command appearing, and after it runs, the txt will pop up with the message.
 
 
-# Operation
+# Final Notes
+
+This was all built in about 24 hrs (including training of the RNN) by three people who learned these tools the couple of days before coming up with the project concept, so if you find any problems or have suggestions, please let us know!
+
+And again, thanks to Andreas Refsgaard and Gene Kogan, who not only taught us how to use everything, but the processing scripts are basically just their orginals with a few minor adjustments to make them fit our project. Check out their work!
 
