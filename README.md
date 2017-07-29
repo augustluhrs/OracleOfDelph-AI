@@ -39,6 +39,18 @@ Software:
 
 Download all software mentioned above -- I won't be going into how to use each of them, so check the individual pages for info.
 
+Make sure you've taken the following files out of /TorchText and placed them in your torch-rnn directory:
+
+all.h5
+
+all.json
+
+allcheck8_34000.t7
+
+(all.txt is the original text file of the five works, if you're curious)
+
+
+
 The Order of Operation:
 
 A) Open Kinect Joints sketch, run it, and make sure kinect is tracking user's skeleton
@@ -49,7 +61,7 @@ C) Open Wekinator (firsttrain.wekiproj) and make sure OSC is coming in from Inpu
 
 D) Open outputdancewords (sorry about the name...) and run it
 
-E) open terminal, navigate to torch-rnn (where you have hopefully copied the TorchText folder from this)
+E) open terminal, navigate to torch-rnn 
 
 so the final step is kinda wonky, but here's how we did it: 
 
