@@ -22,17 +22,17 @@ note: We had to get the duct-tape out when building this, since I (August) was r
 
 Hardware:
 
--- a Kinect (could be substituted with a webcam OSC app, check [ml4a](https://github.com/ml4a/ml4a-ofx))
+- a Kinect (could be substituted with a webcam OSC app, check [ml4a](https://github.com/ml4a/ml4a-ofx))
 
 Software:
 
--- [Torch.rnn](https://github.com/jcjohnson/torch-rnn)
+- [Torch.rnn](https://github.com/jcjohnson/torch-rnn)
 
--- [Processing](https://processing.org/download/)
+- [Processing](https://processing.org/download/)
 
--- [Wekinator](http://www.wekinator.org/downloads/)
+- [Wekinator](http://www.wekinator.org/downloads/)
 
--- [Weki Input Helper](http://www.wekinator.org/input-helper/)
+- [Weki Input Helper](http://www.wekinator.org/input-helper/)
 
 
 # Installation and Operation
@@ -40,26 +40,26 @@ Software:
 Download all software mentioned above -- I won't be going into how to use each of them, so check the individual pages for info.
 
 Make sure you've taken the following files out of /TorchText and placed them in your torch-rnn directory:
-
+```bash
 all.h5
-
 all.json
-
 allcheck8_34000.t7
+```
 
 (all.txt is the original text file of the five works, if you're curious)
 
 
 
+
 The Order of Operation:
 
-A) Open Kinect Joints sketch, run it, and make sure kinect is tracking user's skeleton
+A) Open `Kinect Joints` sketch, run it, and make sure kinect is tracking user's skeleton
 
-B) Open Weki Input Helper (firsttrain.inputproj) and make sure "Send and Monitor" tab is open, check to see if OSC is coming in from Kinect
+B) Open Weki Input Helper (`firsttrain.inputproj`) and make sure "Send and Monitor" tab is open, check to see if OSC is coming in from Kinect
 
-C) Open Wekinator (firsttrain.wekiproj) and make sure OSC is coming in from Input Helper. (Running this will be the last step)
+C) Open Wekinator (`firsttrain.wekiproj`) and make sure OSC is coming in from Input Helper. (Running this will be the last step)
 
-D) Open outputdancewords (sorry about the name...) and run it
+D) Open `outputdancewords` (sorry about the name...) and run it
 
 E) open terminal, navigate to torch-rnn 
 
